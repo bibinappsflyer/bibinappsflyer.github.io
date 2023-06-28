@@ -2,13 +2,9 @@
 <html>
 <head>
   <script>
-    // Get the value of the "script" URL parameter
     const urlParams = new URLSearchParams(window.location.search);
     const scriptParam = urlParams.get('script');
-
-
-    // Dynamically create a script element and set its source based on the parameter
-    if (scriptParam == 'valid') {
+    if (scriptParam == 'invalid') {
 
 
 
@@ -20,12 +16,10 @@ AF('banners', 'showBanner')
 
 
     console.log(scriptParam)
-    // const scriptElement = document.createElement('script');
-    // scriptElement.src = scriptParam;
-    // document.head.appendChild(scriptElement);
+  
     }
 
-else if (scriptParam == 'invalid') {
+else if (scriptParam == 'valid') {
 
 	console.log(scriptParam)
 
@@ -39,7 +33,7 @@ else if (scriptParam == 'invalid') {
   </script>
 </head>
 <body>
-  <!-- Your page content goes here -->
+  
   <h1>Hello, World!</h1>
 
   <p>

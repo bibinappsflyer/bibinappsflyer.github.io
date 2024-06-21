@@ -12,10 +12,10 @@ function _iterableToArrayLimit(t,e){var o=null==t?null:"undefined"!=typeof Symbo
 
 
 //Initializing Smart Script arguments
-var oneLinkURL = "https://deeps.onelink.me/i15V";
-var mediaSource = {keys:["utmsource"],overrideValues:{test:"tests",sdfas:"asdfasdf"},defaultValue:"test"};
-var campaign = {keys:["campaign"]};
-var googleClickIdKey = "af_sub2";
+var oneLinkURL = "https://firsty.onelink.me/MQXc";
+var mediaSource = {keys:["sharedid","irpid"],overrideValues:{"media_source_name":"click_id"},defaultValue:"0000"};
+var campaign = {keys:["utm_campaign"],overrideValues:{"campaign_name":"cmpn"},defaultValue:"cmp"};
+var afSub1 = {keys:["click_id","sharedid","irpid"],defaultValue:"0000"};
 var custom_ss_ui = {paramKey:"af_ss_ui",defaultValue:"true"};
 
 //Call the function after embedding the code through a global parameter on the window object called window.AF_SMART_SCRIPT.
@@ -25,7 +25,7 @@ var result = window.AF_SMART_SCRIPT.generateOneLinkURL({
     afParameters: {
         mediaSource: mediaSource,
         campaign: campaign,
-        googleClickIdKey: googleClickIdKey,
+        afSub1: afSub1,
         afCustom: [
             custom_ss_ui
         ]
@@ -38,6 +38,9 @@ var result = window.AF_SMART_SCRIPT.generateOneLinkURL({
 // See an example of implementation and how to place the URL result behind a CTA on your website: https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/utm_parameters.html?utm_campaign=mycmpn&utm_source=mysource
 
 // See an example of how to display a QR code: https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/qr_code.html?inmedia=my_email&incmp=my_campaign
+
+
+
 
 
 

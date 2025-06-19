@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Buttons</title>
 
-    <style>
-        button {
-            margin: 30px; /* Add 10px margin around each button */
-        }
-    </style>
+    <script>
+        !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "7b6870bc-032d-43b7-bffc-cf5f7f408826"}});
+        AF('banners', 'showBanner')
+        </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollable Placeholder List</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      height: 100vh;
+      overflow-y: scroll;
+      padding: 1rem;
+      background-color: #f0f0f0;
+    }
+
+    .placeholder-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .placeholder-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .placeholder-text {
+      background-color: #ddd;
+      height: 10px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-    <a href="https://bibintests.onelink.me/Vxgc/c4narxtq">
-        <button>https://bibintests.onelink.me/Vxgc/c4narxtq ( With SLP, af_dp)</button>
-    </a>
-    <a href="https://bibintests.onelink.me/Vxgc?af_dp=afbasicapp://mainactivity">
-        <button>https://bibintests.onelink.me/Vxgc?af_dp=afbasicapp://mainactivity</button>
-    </a>
-    <a href="https://bibintests.onelink.me/Vxgc?af_dp=afbasicapp://mainactivity&af_force_deeplink=true">
-        <button>https://bibintests.onelink.me/Vxgc?af_dp=afbasicapp://mainactivity&af_force_deeplink=true</button>
-    </a>
+  <div class="header">Scrollable Placeholder List</div>
+  <div class="container">
+    <!-- Generate 50 placeholder items -->
+    <script>
+      for (let i = 1; i <= 50; i++) {
+        document.write(`
+          <div class="placeholder-item">
+            <div class="placeholder-title">Item ${i}</div>
+            <div class="placeholder-text" style="width: 80%;"></div>
+            <div class="placeholder-text" style="width: 60%;"></div>
+            <div class="placeholder-text" style="width: 90%;"></div>
+          </div>
+        `);
+      }
+    </script>
+  </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <script>
     !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk-stg.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "9b2bcf75-17d1-44ca-bbee-3ef751cfd6c1"}});
     AF('banners', 'showBanner')
-  </script>
+    </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,25 +22,6 @@
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
-    }
-
-    .button-container {
-      text-align: center;
-      margin: 1rem 0;
-    }
-
-    .navigate-button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .navigate-button:hover {
-      background-color: #0056b3;
     }
 
     .container {
@@ -73,13 +54,6 @@
 </head>
 <body>
   <div class="header">Scrollable Placeholder List - Updated</div>
-
-  <div class="button-container">
-    <button class="navigate-button" onclick="window.location.href='/rita_test_page2'">
-      Go to Page 2
-    </button>
-  </div>
-
   <div class="container">
     <!-- Generate 50 placeholder items -->
     <script>
